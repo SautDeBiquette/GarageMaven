@@ -103,10 +103,10 @@ public class Voiture {
 
 	public void imprimeStationnements(PrintStream out) {
 		this.garagesVisites().forEach(garage -> {
-			garage.toString();
+			out.println(garage.toString());
 			this.myStationnements.forEach(stationnement -> {
 				if(stationnement.getGarageVisite() == garage) {
-					stationnement.toString();
+					out.println(stationnement.toString());
 				}
 			});
 
